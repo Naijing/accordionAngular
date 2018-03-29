@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accordion</title>
+	<link rel="stylesheet" type="text/css" href="framework/bootstrap3/css/bootstrap.css">
+	<script type="text/javascript" src="framework/angular/angularjs.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="firstController">
+			<div class="container">
+				<accordion-group>
+					
+					<accordion-collapse ng-repeat="collapse in data" heading="{{collapse.title}}">
+
+						{{collapse.content}}
+
+					</accordion-collapse>
+
+				</accordion-group>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
